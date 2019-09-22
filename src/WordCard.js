@@ -33,7 +33,7 @@ export default class WordCard extends Component {
         return ( 
             <div className='App'>
                 <h2>Find The Word</h2>
-                <p>Attemption : {this.state.attempt}/5</p>
+                <p>Attempt : {this.state.attempt}/5</p>
                  {
                 this.state.chars.map((c, i) => <CharacterCard value = {c} key = {i} attempt = {this.state.attempt} activationHandler={this.activationHandler}/>) 
                 }  
@@ -41,7 +41,7 @@ export default class WordCard extends Component {
                 <h3> {this.state.completed? 'Execellent!!': ''}</h3>
                 <h1> {this.state.attempt == 5? 'YOU LOSE!!!': ''} </h1>
                 <h3> {this.state.attempt == 5? 'Pls try again': ''} </h3>
-                <img src="https://www.clipartwiki.com/clipimg/full/1-13725_beautiful-download-pink-flower-wedding-vector-invitation-clipart.png" height="100" width="200"></img>
+                <img src="https://www.clipartwiki.com/clipimg/full/1-13725_beautiful-download-pink-flower-wedding-vector-invitation-clipart.png" height="300" width="500"></img>
             </div >
         );
     }
