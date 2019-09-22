@@ -32,13 +32,15 @@ export default class WordCard extends Component {
     render() {
         return ( 
             <div className='App'>
-                <p>Attemption : {this.state.attempt}</p>
+                <h2>Find The Word</h2>
+                <p>Attemption : {this.state.attempt}/5</p>
                  {
                 this.state.chars.map((c, i) => <CharacterCard value = {c} key = {i} attempt = {this.state.attempt} activationHandler={this.activationHandler}/>) 
                 }  
-                <h1> {this.state.completed? 'YOU WON !!': ''}</h1>
-                <h1> {this.state.attempt == 5? 'YOU LOSE !!': ''} </h1>
-                <h2> {this.state.attempt == 5? 'Pls try again': ''} </h2>
+                <h1> {this.state.completed? 'YOU WON!!!': ''}</h1>
+                <h3> {this.state.completed? 'Execellent!!': ''}</h3>
+                <h1> {this.state.attempt == 5? 'YOU LOSE!!!': ''} </h1>
+                <h3> {this.state.attempt == 5? 'Pls try again': ''} </h3>
             </div >
         );
     }
