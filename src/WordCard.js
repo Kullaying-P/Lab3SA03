@@ -41,6 +41,7 @@ export default class WordCard extends Component {
                 <h3> {this.state.completed? 'Execellent!!': ''}</h3>
                 <h1> {this.state.attempt == 5? 'YOU LOSE!!!': ''} </h1>
                 <h3> {this.state.attempt == 5? 'Pls try again': ''} </h3>
+                <img src="https://www.clipartwiki.com/clipimg/full/1-13725_beautiful-download-pink-flower-wedding-vector-invitation-clipart.png" height="100" width="200"></img>
             </div >
         );
     }
