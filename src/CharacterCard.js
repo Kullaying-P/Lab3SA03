@@ -24,7 +24,7 @@ export default class CharacterCard extends Component {
     }
 
     componentDidUpdate(prevProps){
-        if(prevProps.attempt != this.props.attempt){
+        if(prevProps.attempt != this.props.attempt && this.props.attempt != 3){
             this.setState({active: false})
         }
     }
